@@ -1,5 +1,6 @@
 html{
     font-size: 16px;
+    
    
 }
 *, *::before, *::after {
@@ -18,10 +19,13 @@ html{
     background-color: #03A6A1;
     color: #FFE3BB;
     padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid black; /* ← lägger till en svart kant runt headern */
+    max-width: 2500px; /* ← begränsar bredden på headern */
+    width: 100%;
+    
   }
   
   header h1 {
@@ -181,3 +185,124 @@ h1 a {
     color: inherit;         /* ärver färgen från h1 */
     font-style: normal; /* tar bort kursiv stil */
   }
+
+
+  @media (max-width: 1200px) {
+    header {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: flex-start; /* justerar innehållet till vänster */
+    }
+    
+    header nav ul {
+        flex-direction: row; /* ändrar listan till kolumnlayout */
+        gap: 1rem; /* minskar mellanrummet mellan länkarna */
+    }
+    
+    .About-me {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: center; /* centrerar innehållet */
+    }
+    
+    .About-me img {
+        max-width: 100%; /* gör bilden responsiv */
+    }
+    
+    main {
+        padding: 1rem; /* lägger till padding runt main */
+    }
+    
+    footer {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: center; /* centrerar innehållet */
+    }
+  }  /* stor skärm, laptop */
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: flex-start; /* justerar innehållet till vänster */
+    }
+    
+    header nav ul {
+        flex-direction: row;
+        gap: 1rem; /* minskar mellanrummet mellan länkarna */
+    }
+    
+    .About-me {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: center; /* centrerar innehållet */
+    }
+    
+    .About-me img {
+        max-width: 100%; /* gör bilden responsiv */
+    }
+    
+    main {
+        padding: 1rem; /* lägger till padding runt main */
+    }
+    
+    footer {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: center; /* centrerar innehållet */
+    }
+}   /* surfplatta, stående */
+}   /* surfplatta, liggande */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: flex-start; /* justerar innehållet till vänster */
+    }
+    
+    header nav ul {
+        flex-direction: row; /* ändrar listan till kolumnlayout */
+        gap: 1rem; /* minskar mellanrummet mellan länkarna */
+    }
+    
+    .About-me {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: center; /* centrerar innehållet */
+    }
+    
+    .About-me img {
+        max-width: 100%; /* gör bilden responsiv */
+    }
+    
+    main {
+        padding: 1rem; /* lägger till padding runt main */
+    }
+    
+    footer {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: center; /* centrerar innehållet */
+    }
+}   /* mobil, stående */
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: flex-start; /* justerar innehållet till vänster */
+    }
+    
+    header nav ul {
+        flex-direction: row; /* ändrar listan till kolumnlayout */
+        gap: 1rem; /* minskar mellanrummet mellan länkarna */
+    }
+    
+    .About-me {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: center; /* centrerar innehållet */
+    }
+    
+    .About-me img {
+        max-width: 100%; /* gör bilden responsiv */
+    }
+    
+    main {
+        padding: 1rem; /* lägger till padding runt main */
+    }
+    
+    footer {
+        flex-direction: column; /* ändrar layouten till kolumn */
+        align-items: center; /* centrerar innehållet */
+    }
+}   /* liten mobil */
