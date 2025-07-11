@@ -1,0 +1,183 @@
+html{
+    font-size: 16px;
+   
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  } 
+  
+  header {
+    background-color: #03A6A1;
+    color: #FFE3BB;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    border: 1px solid black; /* ← lägger till en svart kant runt headern */
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display'; /* ← ändrar storleken på texten */
+  }
+
+  header nav {
+    margin-right: 2rem; /* ← lägger till marginal på höger sida */
+  }
+  
+  header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;      /* ← tar bort prickarna */
+    margin: 0;
+    padding: 0;
+    font-size: 2rem; /* ← ändrar storleken på texten */
+  }
+  
+  header nav ul li a {
+    color: #FFE3BB;
+    text-decoration: solid underline; /* ← ändrar understrykning till solid */
+    text-decoration-thickness: 2px; /* ← ändrar tjockleken på understrykningen */
+    
+  } 
+
+  a {
+    color: #03A6A1; /* ← ändrar färgen på länkar */
+    text-decoration: none; /* ← tar bort understrykning */
+    font-style: italic; /* ← ändrar texten till kursiv */
+  }
+
+  .About-me{
+   display: flex;
+   gap: 1rem;
+   margin-top: 2rem;
+   margin-left: 1rem;
+   align-items: center;
+  }
+
+  .About-me div{
+    flex: 1;
+
+  }
+
+.About-me img{
+    width: 100%;
+    max-width: 300px;   /* du kan justera den här */
+    height: auto;
+    object-fit: cover;  /* ser till att bilden fyller ut utan att bli utdragen */
+    border-radius: 10px; /* rundar hörnen på bilden */
+    border: 2px solid #03A6A1; /* lägger till en kant runt bilden */
+  }
+
+.About-me h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #03A6A1;
+    text-decoration: solid underline; /* understrykning */
+    text-decoration-thickness: 2px; /* tjocklek på understrykningen */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.Between-Sections{
+    background-color:#03A6A1;
+    color:#03A6A1;
+    height: 30px; /* justera höjden efter behov */
+    width: 100%;
+}
+
+.Skills {
+    margin-left: 1rem;
+    
+}
+
+.Skills h2 {
+    font-size: 2rem;
+    color: #03A6A1;
+    text-decoration: solid underline; /* understrykning */
+    text-decoration-thickness: 2px; /* tjocklek på understrykningen */
+}
+
+.Education {
+    margin-left: 1rem;
+}
+
+.Education h2 {
+    font-size: 2rem;    
+    color: #03A6A1;
+    text-decoration: solid underline; /* understrykning */
+    text-decoration-thickness: 2px; /* tjocklek på understrykningen */
+}
+
+.Hobbies {
+    margin-left: 1rem;
+}
+
+.Hobbies h2 {
+    font-size: 2rem;
+    color: #03A6A1;
+    text-decoration: solid underline; /* understrykning */
+    text-decoration-thickness: 2px; /* tjocklek på understrykningen */
+}
+
+
+.Contact {
+    margin-left: 1rem;
+}
+
+.Contact h2 {
+    font-size: 2rem;
+    color: #03A6A1;
+    text-decoration: solid underline; /* understrykning */
+    text-decoration-thickness: 2px; /* tjocklek på understrykningen */
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #03A6A1;
+    color: #FFE3BB;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    border: 1px solid black; /* ← lägger till en svart kant runt footern */
+}
+
+
+/* Projekt Css */
+
+.Projects img {
+    width: 100%;
+    max-width: 300px; /* du kan justera den här */
+    height: auto;
+    object-fit: cover; /* ser till att bilden fyller ut utan att bli utdragen */
+    border-radius: 10px; /* rundar hörnen på bilden */
+    border: 2px solid #03A6A1; /* lägger till en kant runt bilden */
+    display: none; /* döljer bilden som standard */
+}
+
+.skierimg{
+    display: none;
+}
+
+h1 a {
+    text-decoration: none;  /* tar bort understrykning */
+    color: inherit;         /* ärver färgen från h1 */
+    font-style: normal; /* tar bort kursiv stil */
+  }

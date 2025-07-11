@@ -5,29 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wilhelms Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <header>
-        <h1>Wilhelm Sterner</h1>
-        <nav><ul>
-            <li><a href="index.html">About me</a></li>
-            <li><a href="projects.html">Projects</a></li>
+    <header class="header">
+        <h1><a href="index.html">Wilhelm Sterner</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About me</a></li>
+                <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
            
-        </ul
+            </ul
         ></nav>
     </header>
 
     <main>
         <section class="About-me">
-            <h2>About Me</h2>
-            <p class="About-me-text">Welcome to my portfolio! I am Wilhelm Sterner, a passionate software developer with a keen interest in web technologies and open-source projects. However I am also a professional cross country skier with my mind set on competing in the world championsship in Falun 2027. I love learning and thats why I´m here at codecademy learing everyday. When it´s not summer I also study in Östersund at the Mid Sweden University</p>
-            <p>Feel free to explore my <a href="projects.html">projects</a> and get in touch!</p>
+
+         
+            <div>
+                <h2>About Me</h2>
+                 <p class="About-me-text">Welcome to my portfolio! I am Wilhelm Sterner, a passionate software developer with a keen interest in web technologies and open-source projects. However I am also a professional cross country skier with my mind set on competing in the world championsship in Falun 2027. I love learning and thats why I´m here at codecademy learing everyday. When it´s not summer I also study in Östersund at the Mid Sweden University</p>
+                <p>Feel free to explore my <a href="projects.html">projects</a> and get in touch!</p>
+            </div>
+
+
             <div class="image-container">
-                <img src="Resources/Profilbild.jpeg" alt="Wilhelm Sterner">
+                <img src="Resources/Profilbild 2.jpg" alt="Wilhelm Sterner i skidkläder">
             </div>
         </section>
+
+        <div class="Between-Sections"></div>
 
         <section class="Skills">
             <h2>Skills</h2>
@@ -40,10 +51,14 @@
             </ul>
         </section>
 
+        <div class="Between-Sections"></div>
+
         <section class="Education">
             <h2>Education</h2>
             <p>I am currently studying at Mid Sweden University in Östersund, where I am pursuing a degree in Computer Science. My studies focus on software development, web technologies, and data structures.</p>
         </section>
+
+        <div class="Between-Sections"></div>
 
         <section class="Hobbies">
             <h2>Hobbies</h2>
@@ -56,16 +71,25 @@
             </ul>
         </section>
 
+        <div class="Between-Sections"></div>    
+
         <section class="Contact">
             <h2>Contact</h2>
             <p>If you would like to get in touch, feel free to reach out via email or connect with me on LinkedIn or GitHub. See contact options <a href="contact.html">here</a> </p>
+        </section>
+
+   
             
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 Wilhelm Sterner. All rights reserved.</p>
         <p>Last updated: July 2025</p>
+    </footer>
+
+    <script src="main.js"></script>
+    
     
 </body>
 </html>
